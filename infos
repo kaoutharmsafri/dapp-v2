@@ -1,0 +1,205 @@
+=============================================================================
+                    Deployement 4/10/2023
+=============================================================================
+
+Migrations dry-run (simulation)
+===============================
+> Network name:    'goerli-fork'
+> Network id:      5
+> Block gas limit: 30000000 (0x1c9c380)
+
+
+1_deploy.js
+===========
+
+   Deploying 'NFT'
+   ---------------
+   > block number:        9804571
+   > block timestamp:     1696374758
+   > account:             0xfA9e24eed2dB48472e2ecc805Ab08086bAEF31A6
+   > balance:             3.637049541373767734
+   > gas used:            3242700 (0x317acc)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.064854 ETH
+
+   -------------------------------------
+   > Total cost:            0.064854 ETH
+
+Summary
+=======
+> Total deployments:   1
+> Final cost:          0.064854 ETH
+
+
+
+
+Starting migrations...
+======================
+> Network name:    'goerli'
+> Network id:      5
+> Block gas limit: 30000000 (0x1c9c380)
+
+
+1_deploy.js
+===========
+
+   Deploying 'NFT'
+   ---------------
+   > transaction hash:    0x352f89f623a79355d3d9be3c5efa2c7f1b7f63450393620d7be2e67a855184c5
+   > Blocks: 1            Seconds: 8
+   > contract address:    0x02dB804bB86F815FBE1aD571b346AEd0F4D48b72
+   > block number:        9804577
+   > block timestamp:     1696374684
+   > account:             0xfA9e24eed2dB48472e2ecc805Ab08086bAEF31A6
+   > balance:             3.637049541373767734
+   > gas used:            3242700 (0x317acc)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.064854 ETH
+
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:            0.064854 ETH
+
+Summary
+=======
+> Total deployments:   1
+> Final cost:          0.064854 ETH
+
+=======================================================================================================================================================================================================================   25/10/2023   ====================================
+
+Migrations dry-run (simulation)
+===============================
+> Network name:    'goerli-fork'
+> Network id:      5
+> Block gas limit: 30000000 (0x1c9c380)
+
+
+1_deploy.js
+===========
+
+   Replacing 'NFTPay'
+   ------------------
+   > block number:        9927889
+   > block timestamp:     1698227208
+   > account:             0xfA9e24eed2dB48472e2ecc805Ab08086bAEF31A6
+   > balance:             3.351579722784402074
+   > gas used:            3755521 (0x394e01)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.07511042 ETH
+
+   -------------------------------------
+   > Total cost:          0.07511042 ETH
+
+Summary
+=======
+> Total deployments:   1
+> Final cost:          0.07511042 ETH
+
+
+
+
+Starting migrations...
+======================
+> Network name:    'goerli'
+> Network id:      5
+> Block gas limit: 30000000 (0x1c9c380)
+
+
+1_deploy.js
+===========
+
+   Replacing 'NFTPay'
+   ------------------
+   > transaction hash:    0x9018acb447c3e52e9b5fda1278a310e4c8331d148c30cc36d475bbe3f18a65d2
+   > Blocks: 2            Seconds: 16
+   > contract address:    0x3824571F3fcdE4c300FE710C37c89727F9b3CeC5
+   > block number:        9927896
+   > block timestamp:     1698227136
+   > account:             0xfA9e24eed2dB48472e2ecc805Ab08086bAEF31A6
+   > balance:             3.351579722784402074
+   > gas used:            3755521 (0x394e01)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.07511042 ETH
+
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.07511042 ETH
+
+Summary
+=======
+> Total deployments:   1
+> Final cost:          0.07511042 ETH
+
+
+================================================================================================
+                  26/10/23 
+================================================================================================
+Migrations dry-run (simulation)
+===============================
+> Network name:    'goerli-fork'
+> Network id:      5
+> Block gas limit: 30000000 (0x1c9c380)
+
+
+1_deploy.js
+===========
+
+   Replacing 'NFTPay'
+   ------------------
+   > block number:        9934541
+   > block timestamp:     1698329011
+   > account:             0xfA9e24eed2dB48472e2ecc805Ab08086bAEF31A6
+   > balance:             3.270651828592511958
+   > gas used:            4133803 (0x3f13ab)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.08267606 ETH
+
+   -------------------------------------
+   > Total cost:          0.08267606 ETH
+
+Summary
+=======
+> Total deployments:   1
+> Final cost:          0.08267606 ETH
+
+
+
+
+Starting migrations...
+======================
+> Network name:    'goerli'
+> Network id:      5
+> Block gas limit: 30000000 (0x1c9c380)
+
+
+1_deploy.js
+===========
+
+   Replacing 'NFTPay'
+   ------------------
+   > transaction hash:    0x49a71d44a3d87059249336e9da407f89d382d7b84fc60216c1277e001d51e0b3
+   > Blocks: 1            Seconds: 13
+   > contract address:    0x5Ea3BC2747385D276073CDBA6E0323b5909E0a22
+   > block number:        9934546
+   > block timestamp:     1698328932
+   > account:             0xfA9e24eed2dB48472e2ecc805Ab08086bAEF31A6
+   > balance:             3.270651828592511958
+   > gas used:            4133803 (0x3f13ab)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.08267606 ETH
+
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.08267606 ETH
+
+Summary
+=======
+> Total deployments:   1
+> Final cost:          0.08267606 ETH
+

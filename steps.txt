@@ -1,0 +1,122 @@
+===============================================================================
+                            CREATE A SMART CONTRACT AND DEPLOY IT     
+===============================================================================
+
+
+npm install -g truffle 
+
+truffle init
+
+// copy your contract in the contracts folder 
+npm install @openzeppelin/contracts
+
+truffle compile
+
+npm install @truffle/hdwallet-provider
+
+//go to truffleconfig.js and paste this :
+    /* 
+    require('dotenv').config();
+    const { MNEMONIC, PROJECT_ID } = process.env;
+
+    const HDWalletProvider = require('@truffle/hdwallet-provider');
+
+    module.exports = {
+        networks: {
+            development: {
+        host: "127.0.0.1",     // Localhost (default: none)
+        port: 8545,            // Standard Ethereum port (default: none)
+        network_id: "*",       // Any network (default: none)
+        },
+        goerli: {
+        provider: () => new HDWalletProvider(MNEMONIC, PROJECT_ID),
+        network_id: 5,
+        gas: 8000000,
+        gasPrice: 20000000000, // 20 Gwei
+        },
+    */
+
+// build a .secret file (it s like .env)
+    /*
+    PROJECT_ID = "https://goerli.infura.io/v3/b2a286047e4e4075834d46be94103b4d"
+    MNEMONIC = "twin typical begin bar keen weather exile trash daughter poem orbit dune"
+    */
+//build a 1_deploy.js file in the migrations folder ;
+    /*
+    const contract_name = artifacts.require('contract_name');
+
+    module.exports = function (deployer) {
+    deployer.deploy(contract_name);
+    };
+    */
+    
+npm install dotenv
+
+truffle migrate --network goerli
+
+===============================================================================
+                                CREATE REACT APP    
+===============================================================================
+npm create vite@latest NFT_app --template react-ts
+// choose react typeScript 
+
+cd NFT_app
+
+npm install
+
+
+npm install @mantine/hooks @mantine/core @mantine/form
+
+npm install @usedapp/core ethers
+
+npm install @mui/material @mui/system
+
+npm install @tabler/icons-react
+
+npm install @mantine/ds
+
+npm install react-router-dom
+
+npm run dev
+
+npm install crypto-hash
+
+=============================== main.tsx =============================================
+
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App.tsx'
+import './index.css'
+import { DAppProvider, Config, Goerli } from '@usedapp/core'
+import { MantineProvider } from '@mantine/core'
+import { getDefaultProvider } from 'ethers'
+import '@mantine/core/styles.css';
+
+export const config: Config = {
+  readOnlyChainId: Goerli.chainId,
+  readOnlyUrls: {
+    [Goerli.chainId]: "https://goerli.infura.io/v3/b2a286047e4e4075834d46be94103b4d",
+    [Goerli.chainId]: getDefaultProvider('goerli'),
+  },
+  gasLimitBufferPercentage: 10,
+}
+
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  <React.StrictMode>
+    <DAppProvider config={config}>
+      <MantineProvider >
+
+        <App />
+      </MantineProvider>
+    </DAppProvider>
+  </React.StrictMode>
+)
+
+
+===================================================================================
+===================================================================================
+
+import '@mantine/core/styles.css';
+
+===================================================================================
+===================================================================================
